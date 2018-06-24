@@ -10,6 +10,8 @@ eureka:
   instance:
     #eureka服务器的标识，如果是集群就可以写成 eurekaSer1,eurekaSer2,eurekaSer3..
     hostname: ${server.hostname}
+    #Eeureka服务器定义的服务失效时间
+    lease-expiration-duration-in-seconds: 90
   client:
     #registerWithEureka表示是否注册自身到eureka服务器，因为当前这个应用就是eureka服务器，没必要注册自身，所以这里是false
     registerWithEureka: false
