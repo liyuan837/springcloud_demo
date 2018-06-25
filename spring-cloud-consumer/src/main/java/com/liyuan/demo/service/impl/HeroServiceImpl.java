@@ -10,6 +10,7 @@ import com.liyuan.demo.form.hero.HeroUpdateForm;
 import com.liyuan.demo.service.HeroService;
 import com.liyuan.demo.vo.hero.HeroVo;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -24,6 +25,7 @@ public class HeroServiceImpl implements HeroService {
 
     @Override
     @HystrixCommand(fallbackMethod = "queryError")
+    @CacheResult
     public ResponseEntity<HeroVo> query(Integer id) throws DemoException {
         ResponseEntity<HeroVo> response = restTemplate.getForEntity(serverPath + "query?id={id}",ResponseEntity.class,id).getBody();
         return response;
