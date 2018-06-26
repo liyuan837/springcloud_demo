@@ -45,9 +45,17 @@ public class AutoHystrixHeroController extends BaseController {
 	public ResponseEntity<HeroVo> query(@ApiParam(value = "", required = true)@RequestParam Integer id) throws DemoException {
 		HeroPo heroPo = new HeroPo();
 		heroPo.setId(id);
+		HystrixRequestContext.initializeContext();//初始化请求上下文
+
+
+		HeroCommand heroCommand1 = new HeroCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("")),restTemplate,heroPo);
+		heroCommand1.execute();
+
+		HeroCommand heroCommand2 = new HeroCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("")),restTemplate,heroPo);
+		heroCommand2.execute();
+
 		HeroCommand heroCommand = new HeroCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("")),restTemplate,heroPo);
 
-		HystrixRequestContext.initializeContext();//初始化请求上下文
 		return heroCommand.execute();
 	}
 
