@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/demo/hero")
-@Api(value = "/demo/hero", description = "")
+@RequestMapping("/hero")
+@Api(value = "/hero", description = "")
 public class HeroController extends BaseController {
 
 	@Autowired
