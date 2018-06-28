@@ -8,7 +8,7 @@ server:
 
 eureka:
   instance:
-    #eureka服务器的标识，如果是集群就可以写成 eurekaSer1,eurekaSer2,eurekaSer3..
+    #eureka服务器的标识，如果是集群就可以写成 eurekaSer1,eurekaSer2,eurekuoduo aSer3..
     hostname: ${server.hostname}
     #服务失效时间，默认90s
     lease-expiration-duration-in-seconds: 90
