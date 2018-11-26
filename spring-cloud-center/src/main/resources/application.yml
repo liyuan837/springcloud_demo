@@ -1,7 +1,6 @@
 #spring:
 #  profiles:
 #    active: server1
-
 server:
   port: 1111
   hostname: eurekaServer1
