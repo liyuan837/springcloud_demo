@@ -4,8 +4,6 @@
     <list default="true" id="e1598a7a-110d-4f62-9831-b306595f6815" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../spring-cloud-config-center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-center/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-cloud-config-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-config-client/src/main/java/com/liyuan/demo/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-client/src/main/java/com/liyuan/demo/controller/ConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud-config-client/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-client/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-cloud-provider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-provider/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -222,7 +220,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543242848052" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543243311057" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-cloud-provider" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="Project" />
