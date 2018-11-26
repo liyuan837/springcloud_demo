@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Modified By:
  */
 @RestController
-@RefreshScope
+@RefreshScope//此注解，是在访问配置中心的/refresh后服务端加载新配置，自动把新配置注入
 @RequestMapping("/config")
 public class ConfigController {
 
