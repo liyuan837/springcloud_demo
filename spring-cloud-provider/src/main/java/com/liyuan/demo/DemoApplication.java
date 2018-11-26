@@ -6,7 +6,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-@EnableCaching
+//@EnableCaching
 @EnableEurekaClient
 //声明为保护资源
 //@EnableResourceServer

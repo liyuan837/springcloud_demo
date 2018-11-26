@@ -9,6 +9,7 @@ import com.liyuan.demo.form.hero.HeroQueryForm;
 import com.liyuan.demo.form.hero.HeroUpdateForm;
 import com.liyuan.demo.service.HeroService;
 import com.liyuan.demo.vo.hero.HeroVo;
+import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -26,14 +27,18 @@ import javax.validation.Valid;
 @Api(value = "/demo/hystrixhero", description = "")
 public class HystrixHeroController extends BaseController {
 
-	private String serverPath = "http://SPRING-CLOUD-PROVIDER/hero/";
-
 	@Autowired
 	private HeroService heroService;
 
 	@ApiOperation(value = "查询",notes = "根据ID查询",httpMethod = "GET")
 	@GetMapping(value = "/query")
 	public ResponseEntity<HeroVo> query(@ApiParam(value = "", required = true)@RequestParam Integer id) throws DemoException {
+		HystrixRequestContext.initializeContext();
+
+		heroService.query(id);
+
+		heroService.query(id);
+
 		return heroService.query(id);
 	}
 
