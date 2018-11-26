@@ -4,6 +4,7 @@
     <list default="true" id="2b07e5b9-f04d-466d-b100-53d65607c2b2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../spring-cloud-api-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-api-gateway/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-cloud-config-center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-center/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-config-center/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-center/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-cloud-config-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud-config-client/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
